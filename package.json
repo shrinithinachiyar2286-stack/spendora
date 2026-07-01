@@ -16,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/shrinithinachiyar2286-stack/spendora/issues"
   },
-  "homepage": "https://github.com/shrinithinachiyar2286-stack/spendora#readme"
+  "homepage": "https://github.com/shrinithinachiyar2286-stack/spendora#readme",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongoose": "^9.7.3"
+  }
 }
