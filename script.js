@@ -8,7 +8,7 @@ let transactions = [];
 let income = 0;
 let expense = 0;
 let categoryChart;
-const API = "http://localhost:5000/api/transactions";
+const API = "https://YOUR-RENDER-BACKEND.onrender.com/api/transactions";
 const form = document.getElementById("transactionForm");
 const transactionList = document.getElementById("transactionList");
 
