@@ -1,0 +1,202 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ================= BODY THEME BACKGROUND ================= */
+body {
+  min-height: 100vh;
+  transition: 0.3s ease;
+  font-family: Arial, sans-serif;
+}
+
+/* LIGHT MODE */
+body.light {
+  background-image: url("./images/bglight.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* DARK MODE */
+body.dark {
+  background-image: url("./images/bgdark.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* ================= OVERLAY (IMPORTANT FIX) ================= */
+.overlay {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Light mode overlay */
+body.light .overlay {
+  background: rgba(255, 255, 255, 0.10);
+}
+
+/* Dark mode overlay */
+body.dark .overlay {
+  background: rgba(0, 0, 0, 0.45);
+}
+
+/* ================= GLASS CARD ================= */
+.glass-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border: none;
+  border-radius: 20px;
+  color: rgb(255, 255, 255);
+  transition: 0.4s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-8px);
+}
+
+/* ================= HEADINGS ================= */
+h1 {
+  letter-spacing: 2px;
+}
+
+/* ================= CHART SECTION ================= */
+.charts {
+  margin-top: 30px;
+}
+
+.chart-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.chart-card h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+/* Chart size */
+#categoryChart {
+  width: 100%;
+  max-height: 400px;
+}
+
+/* ================= MODE BUTTON ================= */
+#modeBtn {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+
+  width: 45px;
+  height: 45px;
+
+  border-radius: 50%;
+  border: none;
+
+  cursor: pointer;
+  font-size: 18px;
+
+  background: white;
+  z-index: 999;
+}
+body.light {
+  color: black;
+}
+
+body.dark {
+  color: white;
+}
+.card, .glass-card {
+  color: inherit;
+}
+
+/* Authentication Pages */
+
+.auth-container{
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#C46DD8,#2D9CDB);
+}
+
+.auth-card{
+    width:380px;
+    background:#fff;
+    padding:35px;
+    border-radius:18px;
+    box-shadow:0 15px 35px rgba(0,0,0,.2);
+}
+
+.auth-card h1{
+    text-align:center;
+    color:#6C4AB6;
+    margin-bottom:10px;
+}
+
+.auth-card p{
+    text-align:center;
+    color:#777;
+    margin-bottom:20px;
+}
+
+.auth-card input{
+    width:100%;
+    padding:14px;
+    margin-bottom:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:15px;
+}
+
+.auth-card input:focus{
+    outline:none;
+    border-color:#6C4AB6;
+}
+
+.auth-card button{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    background:#6C4AB6;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.auth-card button:hover{
+    background:#57389b;
+}
+
+.link-text{
+    margin-top:20px;
+    text-align:center;
+}
+
+.link-text a{
+    text-decoration:none;
+    color:#6C4AB6;
+    font-weight:600;
+}
+
+.logout-btn {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    background: #e74c3c;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.logout-btn:hover {
+    background: #c0392b;
+}
